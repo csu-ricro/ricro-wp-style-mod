@@ -1,0 +1,10 @@
+.paper {
+  background: $color-common-white;
+  padding: 16px;
+  margin: 5px;
+  box-shadow: 0 0 5px 0 #c7c7c7;
+
+  &-hover:hover {
+    box-shadow: 0 0 5px 0 #6b6b6b;
+  }
+}
