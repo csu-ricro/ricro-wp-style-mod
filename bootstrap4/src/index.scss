@@ -1,0 +1,19 @@
+/*
+* colostate-ricro-bootsrap4
+*/
+
+// CSU Colors
+$primary: #1e4d2b;
+$secondary: #c8c372;
+$theme-colors: (
+  'secondary-black': #59595b,
+  'secondary-aggie-orange': #d9782d,
+  'tertiary-alfalfa': #c9d845,
+  'tertiary-canyon': #cc5430,
+  'tertiary-dark-slate': #105456,
+  'tertiary-reservoir': #12a4b6,
+  'tertiary-sunshine': #ecc530,
+);
+
+// Bootstrap and its default variables
+@import 'node_modules/bootstrap/scss/bootstrap';

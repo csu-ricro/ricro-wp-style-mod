@@ -1,0 +1,28 @@
+{
+  "name": "colostate-ricro-bootstrap4",
+  "version": "0.1.0",
+  "description": "Modified Bootstrap v4 for CSU RICRO",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --watch src/index.scss dist/colostate-ricro-bootstrap4.css",
+    "build": "node-sass src/index.scss dist/colostate-ricro-bootstrap4.css && ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlennox24/ricro-wp-style-mod.git"
+  },
+  "author": "CSU RICRO Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlennox24/ricro-wp-style-mod/issues"
+  },
+  "homepage": "https://github.com/dlennox24/ricro-wp-style-mod#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {
+    "css-minify": "^1.0.1",
+    "node-sass": "^4.9.0"
+  }
+}
