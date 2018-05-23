@@ -1,11 +1,11 @@
 {
   "name": "colostate-ricro-bootstrap4",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Modified Bootstrap v4 for CSU RICRO",
   "main": "index.js",
   "scripts": {
     "start": "node-sass --watch src/index.scss dist/colostate-ricro-bootstrap4.css",
-    "build": "node-sass src/index.scss dist/colostate-ricro-bootstrap4.css && ",
+    "build": "node-sass src/index.scss dist/colostate-ricro-bootstrap4.css && postcss dist/colostate-ricro-bootstrap4.css > dist/colostate-ricro-bootstrap4.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +22,8 @@
     "bootstrap": "^4.1.1"
   },
   "devDependencies": {
-    "css-minify": "^1.0.1",
-    "node-sass": "^4.9.0"
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.9.0",
+    "postcss-cli": "^5.0.0"
   }
 }
