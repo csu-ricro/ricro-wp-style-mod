@@ -4,28 +4,25 @@
 * Do not directly modify this file. Update and recompile the SCSS
 * TODO: add github link
 */
-@import 'variables'; //
+@import "_variables"; //
+@import "bootstrap4/src/index";
 /*
 * ============ START beforeIcons ============
 */
-@import 'beforeIcons'; //
+@import "_beforeIcons"; //
 /*
 * ============ START pageSection ============
 */
-@import 'pageSection'; //
+@import "_pageSection"; //
 /*
 * ============ START alert ============
 */
-@import 'alert'; //
+@import "_alert"; //
 /*
 * ============ START paper ============
 */
-@import 'paper'; //
+@import "_paper"; //
 /*
 * ============ START committeeShowcase ============
 */
-@import 'committeeShowcase'; //
-/*
-* ============ START button ============
-*/
-@import 'button'; //
+@import "_committeeShowcase"; //

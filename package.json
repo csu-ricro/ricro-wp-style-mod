@@ -1,0 +1,29 @@
+{
+  "name": "ricro-wp-style-mod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --watch src/index.scss dist/ricro-wp-style-mod.css",
+    "build": "node-sass src/index.scss dist/ricro-wp-style-mod.css && postcss dist/ricro-wp-style-mod.css > dist/ricro-wp-style-mod.min.css",
+    "start:bootstrap4": "node-sass --watch bootstrap4/src/index.scss bootstrap4/dist/colostate-ricro-bootstrap4.css",
+    "build:bootstrap4": "node-sass bootstrap4/src/index.scss bootstrap4/dist/colostate-ricro-bootstrap4.css && postcss bootstrap4/dist/colostate-ricro-bootstrap4.css > bootstrap4/dist/colostate-ricro-bootstrap4.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlennox24/ricro-wp-style-mod.git"
+  },
+  "author": "CSU RICRO Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlennox24/ricro-wp-style-mod/issues"
+  },
+  "homepage": "https://github.com/dlennox24/ricro-wp-style-mod#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.1",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.9.0",
+    "postcss-cli": "^5.0.0"
+  }
+}
