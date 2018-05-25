@@ -2,18 +2,27 @@
 * colostate-ricro-bootsrap4
 */
 
+@import "../../src/_variables";
 // CSU Colors
-$primary: #1e4d2b;
-$secondary: #c8c372;
+$primary: $color-csuBrand-primary-green;
+$secondary: $color-csuBrand-primary-gold;
 $theme-colors: (
-  'secondary-black': #59595b,
-  'secondary-aggie-orange': #d9782d,
-  'tertiary-alfalfa': #c9d845,
-  'tertiary-canyon': #cc5430,
-  'tertiary-dark-slate': #105456,
-  'tertiary-reservoir': #12a4b6,
-  'tertiary-sunshine': #ecc530,
+  "secondary-black": $color-csuBrand-secondary-black,
+  "secondary-aggie-orange": $color-csuBrand-secondary-aggieOrange,
+  "tertiary-alfalfa": $color-csuBrand-tertiary-alfalfa,
+  "tertiary-canyon": $color-csuBrand-tertiary-canyon,
+  "tertiary-dark-slate": $color-csuBrand-tertiary-darkSlate,
+  "tertiary-reservoir": $color-csuBrand-tertiary-reservoir,
+  "tertiary-sunshine": $color-csuBrand-tertiary-sunshine
 );
 
-// Bootstrap and its default variables
-@import 'node_modules/bootstrap/scss/bootstrap';
+$border-radius: 0;
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Bootstrap Overrides
+.btn {
+  // Make text in buttons wrap
+  white-space: normal;
+}
