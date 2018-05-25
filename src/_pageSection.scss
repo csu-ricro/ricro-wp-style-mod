@@ -1,0 +1,45 @@
+%pageSection {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 24px 0 0 0 !important;
+  text-align: left;
+}
+
+.page-section > h3,
+h3.page-section {
+  @extend %pageSection;
+  color: $color-csuBrand-primary-green !important;
+}
+
+.page-section > h2,
+h2.page-section {
+  @extend %pageSection;
+  color: $color-csuBrand-secondary-aggieOrange !important;
+}
+
+%pageSectionAfter {
+  content: "";
+  height: 3px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: .6;
+  margin-left: 10px;
+}
+
+.page-section > h3:after,
+h3.page-section:after {
+  @extend %pageSectionAfter;
+  background-color: $color-csuBrand-primary-green;
+}
+
+.page-section > h2:after,
+h2.page-section:after {
+  @extend %pageSectionAfter;
+  background-color: $color-csuBrand-secondary-aggieOrange;
+}

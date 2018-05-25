@@ -1,0 +1,33 @@
+#committee-showcase {
+  .paper {
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .alias {
+    margin: 0;
+  }
+
+  a {
+    .alias {
+      display: none;
+    }
+
+    &:hover {
+      .alias {
+        display: block;
+      }
+
+      i {
+        display: none;
+      }
+
+      .name {
+        display: none;
+      }
+    }
+  }
+}

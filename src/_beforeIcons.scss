@@ -1,0 +1,98 @@
+%faIconBefore {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  padding-right: 5px;
+}
+
+.youtube:before {
+  @extend %faIconBefore;
+  content: "\f16a";
+}
+
+.ppt:before {
+  @extend %faIconBefore;
+  content: "\f1c4";
+}
+
+.doc:before {
+  @extend %faIconBefore;
+  content: "\f1c2";
+}
+
+.xls:before {
+  @extend %faIconBefore;
+  content: "\f1c3";
+}
+
+a[href$=".pdf"]:before,
+.pdf:before {
+  @extend %faIconBefore;
+  content: "\f1c1";
+}
+
+a[href^="mailto:"]:before {
+  @extend %faIconBefore;
+  content: "\f003";
+}
+
+a[href^="tel:"]:before {
+  @extend %faIconBefore;
+  content: "\f095";
+}
+
+.fax:before {
+  @extend %faIconBefore;
+  content: "\f1ac";
+}
+
+.no-icon:before,
+.u-email:before {
+  @extend %faIconBefore;
+  content: none !important;
+}
+
+.auth:before {
+  @extend %faIconBefore;
+  content: "\f023";
+}
+
+%notifyChip {
+  display: inline;
+  padding: 0.2em 0.6em 0.27em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  margin: 0 5px;
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+
+.new:before {
+  @extend %notifyChip;
+  content: "new";
+  background-color: $color-alert-info;
+}
+
+.updated:before {
+  @extend %notifyChip;
+  content: "updated";
+  background-color: $color-alert-warning;
+}
+
+.coming-soon:before {
+  @extend %notifyChip;
+  content: "coming soon";
+  background-color: $color-alert-success;
+}
+
+.menu-item a:before {
+  content: initial;
+}
