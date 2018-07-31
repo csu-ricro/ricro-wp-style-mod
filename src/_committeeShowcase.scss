@@ -1,33 +1,53 @@
+%text-styling {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "factoria-book", "Helvetica", "Arial", sans-serif;
+  transition: 0.7s ease;
+  width: 100%;
+  padding: 2px 16px;
+}
+
 #committee-showcase {
-  .paper {
+  p {
+    display: none;
+  }
+
+  .row {
+    margin: 0;
+
+    & > [class*="col-md"] {
+      padding: 2px;
+    }
+  }
+
+  .showcase-element {
     height: 175px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .alias {
     margin: 0;
-  }
+    background-size: cover;
+    background-position: center;
 
-  a {
-    .alias {
-      display: none;
+    .com {
+      @extend %text-styling;
+      opacity: 0;
     }
 
-    &:hover {
-      .alias {
-        display: block;
-      }
+    .abr {
+      @extend %text-styling;
+      margin-top: 15%;
+    }
 
-      i {
-        display: none;
-      }
+    &:hover .abr {
+      opacity: 0;
+      margin-top: -10%;
+    }
 
-      .name {
-        display: none;
-      }
+    &:hover .com {
+      opacity: 1;
     }
   }
 }

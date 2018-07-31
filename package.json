@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/dlennox24/ricro-wp-style-mod#readme",
   "devDependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.1.3",
     "cssnano": "^3.10.0",
-    "node-sass": "^4.9.0",
-    "postcss-cli": "^5.0.0"
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^5.0.1"
   }
 }
